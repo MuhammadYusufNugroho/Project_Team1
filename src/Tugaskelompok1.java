@@ -73,13 +73,13 @@ public class Tugaskelompok1 {
 
         System.out.print("1. " + menu1 + ": ");
         int porsi1 = scan.nextInt();
-        System.out.print("2. " + menu1 + ": ");
+        System.out.print("2. " + menu2 + ": ");
         int porsi2 = scan.nextInt();
-        System.out.print("1. " + menu1 + ": ");
+        System.out.print("1. " + menu3 + ": ");
         int porsi3 = scan.nextInt();
-        System.out.print("1. " + menu1 + ": ");
+        System.out.print("1. " + menu4 + ": ");
         int porsi4 = scan.nextInt();
-        System.out.print("1. " + menu1 + ": ");
+        System.out.print("1. " + menu5 + ": ");
         int porsi5 = scan.nextInt();
 
         //        Varibel Total Pembelian
