@@ -148,15 +148,14 @@ public class Tugaskelompok1 {
         orderItem[] items = new orderItem[]{item1,item2,item3,item4,item5};
 
         // print all
-        print(items, formatted6, formatted7, formatted8, formatted9);
-
+        print(items, formatted6, formatted7, formatted8, formatted9, jmhPesanan);
 
 //        Final line
         System.out.println("\nTerima kasih atas kunjungan Anda...");
         System.out.println("\n...tekan ENTER untuk keluar...");
     }
 
-    static void print(orderItem[] items, String total, String disc, String totalAfterDisc, String totalEach) {
+    static void print(orderItem[] items, String total, String disc, String totalAfterDisc, String totalEach, int guestCount) {
         int nameMaxLength = 0;
         int priceMaxLength = 0;
         int totalPriceMaxLength = total.length();
@@ -227,7 +226,8 @@ public class Tugaskelompok1 {
         System.out.println();
 
 
-        printFooter("Pembelian per orang (untuk 8 orang)", column1, totalEach, totalPriceMaxLength, " ");
+        String label = String.format("Pembelian per orang (untuk %d orang)", guestCount);
+        printFooter(label, column1, totalEach, totalPriceMaxLength, " ");
     }
 
     static void printFooter(String label, int col1Max, String total, int totalMax, String suffix) {
