@@ -72,15 +72,15 @@ public class Tugaskelompok1 {
 //        Porsi di kali harga Variable
 
         System.out.print("1. " + menu1 + ": ");
-        int porsi1 = scan.nextInt();
+        int porsi1 = scanIntMax(scan, 10);
         System.out.print("2. " + menu2 + ": ");
-        int porsi2 = scan.nextInt();
-        System.out.print("1. " + menu3 + ": ");
-        int porsi3 = scan.nextInt();
-        System.out.print("1. " + menu4 + ": ");
-        int porsi4 = scan.nextInt();
-        System.out.print("1. " + menu5 + ": ");
-        int porsi5 = scan.nextInt();
+        int porsi2 = scanIntMax(scan, 10);
+        System.out.print("3. " + menu3 + ": ");
+        int porsi3 = scanIntMax(scan, 10);
+        System.out.print("4. " + menu4 + ": ");
+        int porsi4 = scanIntMax(scan, 10);
+        System.out.print("5. " + menu5 + ": ");
+        int porsi5 = scanIntMax(scan, 10);
 
         //        Varibel Total Pembelian
         double totalPembelian1 = porsi1 * harga1;
@@ -153,6 +153,14 @@ public class Tugaskelompok1 {
 //        Final line
         System.out.println("\nTerima kasih atas kunjungan Anda...");
         System.out.println("\n...tekan ENTER untuk keluar...");
+    }
+
+    static int scanIntMax(Scanner scan, int max) {
+        int val = scan.nextInt();
+        if (val > 10) {
+            val = 10;
+        }
+        return val;
     }
 
     static void print(orderItem[] items, String total, String disc, String totalAfterDisc, String totalEach, int guestCount) {
