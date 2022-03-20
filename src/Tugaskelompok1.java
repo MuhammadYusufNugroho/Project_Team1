@@ -53,7 +53,7 @@ public class Tugaskelompok1 {
         System.out.print("\nPesanan untuk berapa orang : ");
         int jmhPesanan = scan.nextInt();
 
-        System.out.print("Pesanan atas nama : ");
+        System.out.print("Pesanan atas nama          : ");
         String namaUser = scan.next();
 
 
@@ -152,7 +152,13 @@ public class Tugaskelompok1 {
 
 //        Final line
         System.out.println("\nTerima kasih atas kunjungan Anda...");
+        promptEnterKey();
+    }
+
+    public static void promptEnterKey() {
         System.out.println("\n...tekan ENTER untuk keluar...");
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
     }
 
     static int scanIntMax(Scanner scan, int max) {
